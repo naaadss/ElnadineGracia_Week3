@@ -166,29 +166,4 @@ Dari hasil analisis dapat disimpulkan:
 
 4. **Analisis KEGG** menunjukkan keterlibatan pathway *Cell cycle*, *DNA replication*, *p53 signaling*, dan *Non-small cell lung cancer* yang sangat relevan secara klinis. Gen *CDK1, CCNB1*, dan *RRM2* teridentifikasi sebagai hub genes yang terlibat di banyak pathway, menjadikannya kandidat biomarker dan target terapi yang menjanjikan untuk penelitian lebih lanjut.
 
----
 
-## Referensi
-
-1. Landi, M.T., et al. (2008). Gene expression signature of cigarette smoking and its role in lung adenocarcinoma development and survival. *PLoS ONE*, 3(2), e1651. (**Sumber data GSE10072**)
-2. Smyth, G.K. (2004). Linear models and empirical bayes methods for assessing differential expression in microarray experiments. *Statistical Applications in Genetics and Molecular Biology*, 3(1).
-3. Yu, G., et al. (2012). clusterProfiler: an R Package for comparing biological themes among gene clusters. *OMICS*, 16(5), 284–287.
-4. Barrett, T., et al. (2013). NCBI GEO: archive for functional genomics data sets—update. *Nucleic Acids Research*, 41(D1), D991–D995.
-5. Hanahan, D. & Weinberg, R.A. (2011). Hallmarks of cancer: the next generation. *Cell*, 144(5), 646–674.
-
----
-
-## Lampiran: Script Analisis
-
-Script R lengkap tersedia di file `analisis_GSE10072.R` pada repository ini.
-
-**Packages yang digunakan:**
-- `GEOquery` — Download data GEO
-- `limma` — Analisis DEG (microarray)
-- `hgu133a.db` — Anotasi gen Affymetrix HG-U133A
-- `clusterProfiler` — Enrichment analysis (GO & KEGG)
-- `org.Hs.eg.db` — Database anotasi gen manusia
-- `enrichplot` — Visualisasi enrichment
-- `ggplot2` + `ggrepel` — Volcano plot
-- `pheatmap` — Heatmap
-- `dplyr` — Manipulasi data
